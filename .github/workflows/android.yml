@@ -22,7 +22,7 @@ jobs:
     - name: build APK
       run: bash ./gradlew assembleRelease --stacktrace
     - name: upload APK
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: release
         path: app/build/outputs/apk/release/app-release-unsigned.apk
